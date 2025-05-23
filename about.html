@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}About - Ayush Jain{% endblock %}
+
+{% block content %}
+<style>
+  .about-box {
+    background: linear-gradient(to bottom right, #f3e5f5, #fffde7);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  .about-box h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2c2c2c;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-box p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.75;
+  }
+
+  .skills-section {
+    margin-top: 2.5rem;
+  }
+
+  .skill-badge {
+    display: inline-block;
+    background-color: #eceff1;
+    color: #333;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.9rem;
+    margin: 0.3rem;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+  }
+
+  .skill-badge:hover {
+    background-color: #d7ccc8;
+    color: #000;
+  }
+</style>
+
+<div class="about-box" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    I’m Ayush Jain, a BCA student and backend developer with a focus on Python and Flask. I love crafting clean, practical web applications and learning new tools that help me build better software every day.
+  </p>
+
+  <div class="skills-section">
+    <h5 class="mt-4 mb-3 text-secondary fw-semibold">Skills I Work With:</h5>
+    <span class="skill-badge">Python</span>
+    <span class="skill-badge">Flask</span>
+    <span class="skill-badge">HTML/CSS</span>
+    <span class="skill-badge">Bootstrap</span>
+    <span class="skill-badge">Git</span>
+    <span class="skill-badge">SQLite</span>
+  </div>
+</div>
+{% endblock %}

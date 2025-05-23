@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects - Ayush Jain{% endblock %}
+
+{% block content %}
+<style>
+  .projects-wrapper {
+    background: linear-gradient(to bottom right, #fffde7, #e8f5e9);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .project-card {
+    background-color: #ffffff;
+    border-left: 5px solid #81c784; /* soft green accent */
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .project-card h5 {
+    font-weight: 600;
+    color: #2e7d32;
+    margin-bottom: 0.4rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+  }
+
+  .tech-used {
+    font-size: 0.85rem;
+    color: #888;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #2d2d2d;
+  }
+</style>
+
+<div class="projects-wrapper" data-aos="fade-up">
+  <h2 class="section-title">📁 My Projects</h2>
+
+  <div class="project-card">
+    <h5>Personal Portfolio Website</h5>
+    <p>A clean, responsive website built using Flask to showcase my profile and work.</p>
+    <p class="tech-used">Tech: Flask, Python, HTML, Bootstrap</p>
+  </div>
+
+  <div class="project-card">
+    <h5>Task Management System</h5>
+    <p>A web app with user login and CRUD functionality to manage daily tasks.</p>
+    <p class="tech-used">Tech: Django, SQLite, Bootstrap</p>
+  </div>
+
+  <div class="project-card">
+    <h5>Job Listing Scraper</h5>
+    <p>A Python script that extracts job data and saves it to a local database.</p>
+    <p class="tech-used">Tech: Python, BeautifulSoup, SQLite</p>
+  </div>
+
+  <div class="project-card">
+    <h5>Expense Tracker</h5>
+    <p>A desktop app that helps track and categorize expenses easily.</p>
+    <p class="tech-used">Tech: Python, Tkinter</p>
+  </div>
+</div>
+{% endblock %}

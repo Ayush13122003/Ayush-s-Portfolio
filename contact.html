@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact - Ayush Jain{% endblock %}
+
+{% block content %}
+<style>
+  .contact-box {
+    background: linear-gradient(to bottom right, #fce4ec, #e3f2fd);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .contact-box h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c2c2c;
+    text-align: center;
+  }
+
+  .form-label {
+    font-weight: 500;
+    color: #444;
+  }
+
+  .form-control {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: border 0.2s ease;
+  }
+
+  .form-control:focus {
+    border-color: #90caf9;
+    box-shadow: 0 0 5px rgba(144, 202, 249, 0.4);
+  }
+
+  .btn-submit {
+    background-color: #1976d2;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .btn-submit:hover {
+    background-color: #1565c0;
+  }
+</style>
+
+<div class="contact-box" data-aos="fade-up">
+  <h2>📬 Contact Me</h2>
+
+  <!-- Contact Form -->
+  <form method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Your Name</label>
+      <input type="text" class="form-control" name="name" required placeholder="e.g. Ayush Jain" />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Your Email</label>
+      <input type="email" class="form-control" name="email" required placeholder="e.g. ayush@example.com" />
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Your Message</label>
+      <textarea class="form-control" name="message" rows="4" required placeholder="Say something..."></textarea>
+    </div>
+
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-submit">Send Message</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

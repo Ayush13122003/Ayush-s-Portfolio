@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Ayush Jain{% endblock %}
+
+{% block content %}
+<style>
+  .hero {
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    padding: 4rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: background 0.5s ease;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<div class="hero" data-aos="fade-up">
+  <h1>Hi, I’m Ayush Jain</h1>
+  <p>I’m a Python developer passionate about building clean, functional, and elegant web applications using Flask and modern tools. Explore my portfolio to learn more about my projects and background.</p>
+</div>
+{% endblock %}
